@@ -1,0 +1,357 @@
+# MUTUAL FUND ANALYTICS PROJECT
+
+## Final Capstone Report
+
+### Prepared By
+
+Ansh Jain
+
+### University
+
+Bennett University
+
+### Program
+
+B.Tech CSE (Data Science)
+
+---
+
+# 1. Executive Summary
+
+The Mutual Fund Analytics Project is an end-to-end financial analytics solution developed to analyze mutual fund performance, investor behavior, risk measures, and market trends using Python-based technologies. The objective of this project is to transform raw mutual fund datasets into meaningful business insights through data engineering, exploratory data analysis, performance analytics, advanced risk analytics, and interactive dashboards.
+
+The project includes multiple stages such as data ingestion, data cleaning, data validation, SQLite database creation, exploratory data analysis (EDA), performance analytics, advanced risk analysis, investor analytics, and dashboard creation.
+
+Financial metrics such as CAGR, Sharpe Ratio, Sortino Ratio, Alpha, Beta, Maximum Drawdown, Value at Risk (VaR), and Conditional Value at Risk (CVaR) were calculated to evaluate mutual fund performance comprehensively.
+
+Interactive dashboards were created using Plotly to visualize industry trends, investor behavior, SIP growth, and market movements.
+
+Technologies Used:
+
+• Python
+• Pandas
+• NumPy
+• SQLite
+• Plotly
+• Matplotlib
+• Seaborn
+• Jupyter Notebook
+• Git & GitHub
+
+---
+
+# 2. Project Objective
+
+The primary objective of this project is to build a comprehensive Mutual Fund Analytics platform capable of analyzing mutual fund schemes, investor transactions, market benchmarks, and portfolio holdings.
+
+The project aims to:
+
+1. Build an ETL pipeline for mutual fund datasets.
+2. Clean and validate financial datasets.
+3. Perform exploratory data analysis.
+4. Evaluate fund performance using financial metrics.
+5. Analyze investor demographics and SIP behavior.
+6. Develop interactive dashboards.
+7. Build a recommendation system based on investor risk appetite.
+8. Present findings in a professional report and dashboard.
+
+---
+
+# 3. Data Sources
+
+The project uses the following datasets:
+
+1. fund_master.csv
+   Contains scheme information such as AMFI code, fund house, category, and plan.
+
+2. nav_history.csv
+   Contains historical NAV values for all schemes.
+
+3. investor_transactions.csv
+   Contains SIP, Lump Sum investments, and redemption transactions.
+
+4. scheme_performance.csv
+   Contains returns, AUM, expense ratios, and risk metrics.
+
+5. category_inflows.csv
+   Contains category-wise monthly inflows.
+
+6. benchmark_indices.csv
+   Contains NIFTY benchmark values used for Alpha and Beta calculations.
+
+7. portfolio_holdings.csv
+   Contains sector allocation and portfolio weights.
+
+8. aum_by_fund_house.csv
+   Contains AUM distribution across fund houses.
+
+---
+
+# 4. ETL Architecture
+
+Raw CSV Files
+
+↓
+
+Data Ingestion using Pandas
+
+↓
+
+Data Cleaning & Validation
+
+↓
+
+Processed CSV Files
+
+↓
+
+SQLite Database
+
+↓
+
+Exploratory Data Analysis
+
+↓
+
+Performance Analytics
+
+↓
+
+Interactive Dashboard
+
+↓
+
+Final Report & Presentation
+
+---
+
+# 5. Data Cleaning and Validation
+
+The data cleaning phase involved:
+
+• Handling missing values
+• Standardizing transaction types
+• Converting dates into datetime format
+• Removing duplicate records
+• Validating NAV and transaction values
+• Ensuring referential integrity between datasets
+• Creating processed datasets for analysis
+
+SQLite was used to store cleaned datasets for efficient querying and data retrieval.
+
+---
+
+# 6. Exploratory Data Analysis (EDA)
+
+Several visualizations were created to identify important trends.
+
+Key Findings:
+
+1. SIP inflows demonstrated a strong upward trend from 2022 to 2025.
+
+2. SBI Mutual Fund emerged as the leading fund house in terms of Assets Under Management.
+
+3. Large Cap schemes dominated investor preferences.
+
+4. Tier-1 and T30 cities contributed the majority of investments.
+
+5. Investor participation increased consistently across age groups.
+
+6. Category-wise inflows showed strong growth in equity-oriented funds.
+
+7. NAV values exhibited long-term growth across most schemes.
+
+8. Folio count increased from 13.26 Crore to 26.12 Crore.
+
+---
+
+# 7. Performance Analytics
+
+Several advanced financial metrics were calculated.
+
+### CAGR
+
+Compound Annual Growth Rate was used to measure annualized returns.
+
+### Sharpe Ratio
+
+Sharpe Ratio evaluated risk-adjusted returns by comparing excess returns with volatility.
+
+### Sortino Ratio
+
+Sortino Ratio considered downside risk and ignored positive volatility.
+
+### Alpha
+
+Alpha measured excess return over the benchmark.
+
+### Beta
+
+Beta measured sensitivity of fund returns to market returns.
+
+### Maximum Drawdown
+
+Maximum Drawdown quantified the largest decline from peak NAV.
+
+### Value at Risk (VaR)
+
+Historical VaR estimated the maximum expected loss at 95% confidence.
+
+### Conditional VaR (CVaR)
+
+CVaR measured the average loss beyond the VaR threshold.
+
+---
+
+# 8. Advanced Analytics
+
+Advanced analytics included:
+
+• Historical VaR for all schemes
+
+• Conditional VaR (CVaR)
+
+• Rolling 90-Day Sharpe Ratio
+
+• Investor Cohort Analysis
+
+• SIP Continuity Analysis
+
+• Sector HHI Concentration Analysis
+
+• Mutual Fund Recommendation System
+
+The recommendation engine suggests funds based on investor risk appetite (Low, Moderate, High).
+
+---
+
+# 9. Dashboard Description
+
+An interactive dashboard was created using Plotly.
+
+The dashboard consists of:
+
+### Page 1 – Industry Overview
+
+• Total AUM
+
+• Total SIP Inflows
+
+• Total Folios
+
+• Total Schemes
+
+• Industry AUM Trend
+
+• AUM by Fund House
+
+### Page 2 – Fund Performance
+
+• Risk vs Return Scatter Plot
+
+• NAV Trends
+
+• Benchmark Comparison
+
+### Page 3 – Investor Analytics
+
+• State-wise Investments
+
+• Transaction Type Distribution
+
+• Age Group Analysis
+
+• Investor Segmentation
+
+### Page 4 – SIP and Market Trends
+
+• SIP Growth Trend
+
+• Category Inflow Heatmap
+
+• Market Benchmark Trend
+
+---
+
+# 10. Limitations
+
+1. The analysis is based on historical data.
+
+2. Future market conditions may differ significantly.
+
+3. Macroeconomic variables were not modeled explicitly.
+
+4. The recommendation system is rule-based.
+
+5. Portfolio optimization was outside the scope of this project.
+
+---
+
+# 11. Recommendations
+
+1. Low-risk investors should prefer diversified Large Cap funds.
+
+2. SIP continuity should be maintained for long-term wealth creation.
+
+3. Diversified portfolios help reduce concentration risk.
+
+4. Investors should monitor Sharpe Ratio and Maximum Drawdown before investing.
+
+5. Sector diversification can improve portfolio stability.
+
+---
+
+# 12. Conclusion
+
+The Mutual Fund Analytics Project successfully demonstrates an end-to-end implementation of financial analytics using Python and data science techniques.
+
+The project covers:
+
+• Data Engineering
+
+• Exploratory Data Analysis
+
+• Performance Analytics
+
+• Risk Analytics
+
+• Investor Analytics
+
+• Interactive Dashboards
+
+• Recommendation System
+
+Advanced metrics such as CAGR, Sharpe Ratio, Sortino Ratio, Alpha, Beta, Maximum Drawdown, VaR, and CVaR provided deeper insights into mutual fund performance.
+
+This project demonstrates how data analytics can be effectively applied to financial markets to support informed investment decisions.
+
+---
+
+# References
+
+1. AMFI (Association of Mutual Funds in India)
+
+https://www.amfiindia.com
+
+2. NSE India
+
+https://www.nseindia.com
+
+3. Python Documentation
+
+https://docs.python.org
+
+4. Pandas Documentation
+
+https://pandas.pydata.org
+
+5. Plotly Documentation
+
+https://plotly.com/python/
+
+6. SQLite Documentation
+
+https://www.sqlite.org
+
+7. Mutual Fund Industry Reports and Public Financial Datasets.
+
